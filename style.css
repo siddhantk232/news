@@ -59,3 +59,67 @@ header button {
 #banner button:hover {
     filter: brightness(90%);
 }
+
+#new {
+    background-color: var(--very-dark-blue);
+    padding: 0.5rem 1rem;
+    margin: 2.5rem 0;
+}
+
+#new h2 {
+    color: var(--soft-orange);
+}
+
+#new ul {
+    list-style: none;
+    padding-left: 0;
+
+    color: white;
+}
+
+#new ul li:not(:last-child) {
+    border-bottom: 1px solid var(--dark-grayish-blue);
+}
+
+#top_news p {
+    color: var(--dark-grayish-blue);
+}
+
+#top_news>div {
+    display: flex;
+}
+
+#top_news h3 {
+    font-size: 1.2rem;
+    color: ver(--very-dark-blue);
+}
+
+#top_news>div {
+    margin-bottom: 1rem;
+    counter-increment: top;
+}
+
+#top_news {
+    counter-set: top, 0;
+}
+
+#top_news img {
+    width: 120px;
+}
+
+.card_desc {
+    margin-left: 1rem;
+}
+
+.card_desc::before {
+    content: counter(top, decimal-leading-zero);
+    color: var(--grayish-blue);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.attribution {
+    font-size: 0.7rem;
+    color: var(--dark-grayish-blue);
+    text-align: center;
+}
